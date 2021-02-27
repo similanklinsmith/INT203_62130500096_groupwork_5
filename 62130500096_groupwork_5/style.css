@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.results {
+    font-weight: 600
+}
+video{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.title{
+    color: black;
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    transition: 0.3s all ease;
+}
+.title:hover{
+    transform: skew(-10deg, 0);
+    color: white;
+    text-decoration: underline;
+}
+
+
+.title span{
+    color: white;
+}
+select {
+    border: none;
+    outline: none;
+    padding: 0px 4px;
+    cursor: pointer;
+    background: inherit
+}
+.number-like span{
+    color: crimson;
+}
+.card {
+    border: none;
+    cursor: pointer
+}
+.card-img-top{
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    transition: all 0.3s ease-in-out;
+    background: #99ccff;
+    
+}
+img {
+    background-color: #fdf8f4;
+    width: 150px;
+    height: 220px;
+    object-fit: contain;
+    padding-top: 10px
+}
+
+.card-body {
+    padding: 0.5rem;
+    padding-top: 0.7rem;
+    padding-right: 0.2rem
+}
+
+.fa-heart {
+    font-size: 1.2rem
+}
+.like{
+    color: crimson;
+}
+.h6 {
+    margin: 0
+}
+
+.btn {
+    padding-top: 0
+}
+
+.btn:hover {
+    color: #fdaa4b
+}
+
+div.text-muted {
+    font-size: 0.9rem
+}
+.show{
+    display: none;
+}
+.lightbox{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.8);
+}
+.largeImg{
+    padding-left: 25%;
+}
+.largeImg img{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+}
+.fa-times,.fa-arrow-right,.fa-arrow-left{
+    color: white;
+    z-index: 999;
+    float: right;
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+.fa-arrow-right:hover,.fa-arrow-left:hover,.fa-times:hover{
+    opacity: 0.5;
+}
+
+  
+@media(max-width:372px) {
+    .results {
+        font-size: 0.9rem
+    }
+    .largeImg{
+        padding-left: 0;
+    }
+    .fa-arrow-right,.fa-arrow-left{
+        padding-top: 10px;
+    }
+}
+
+@media(max-width:330px) {
+    .results {
+        font-size: 0.85rem
+    }
+    .card img{
+        object-fit: scale-down;
+    }
+    .largeImg{
+        padding-left: 0;
+    }
+    .fa-arrow-right,.fa-arrow-left{
+        padding-top: 10px;
+    }
+    
+}
+
+@media(min-height: 700px) {
+    body {
+        height: 100vh
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        height: 100%
+    }
+    .largeImg{
+        padding-left: 0;
+    }
+    .fa-arrow-right,.fa-arrow-left{
+        padding-top: 10px;
+    }
+    
+}
